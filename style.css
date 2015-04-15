@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "EmojiSymbols";
+    src: url('http://fsymbols.com/css/EmojiSymbols-Regular.woff');
+}
+
+body {
+    background: #fff;
+    color: black;
+}
+
+.container {
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    margin-top: calc(50vh - 150px);
+}
+
+h3 {
+    padding: 5px 10px 5px 10px;
+    color: white;
+    background: #000;
+    display: inline;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+h4 {
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    font-weight: normal;
+}
+
+h1 small {
+    color: rgba(0,0,0,0.2);
+}
+
+textarea {
+    margin-top: 10px;
+    height: 300px;
+    width: 100%;
+}
+
+.key {
+    font-family: "EmojiSymbols" !important;
+    z-index: 10;
+    font-size: 80px;
+    color: rgba(0,0,0,0.4);
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    left: calc(50% - 40px);
+    top: calc(50vh + 120px);
+    transition-duration: 500ms;
+    opacity: 0;
+    transform: scale(3);
+    transform-origin: 50% 50%;
+}
+
+.key.active {
+    opacity: 1;
+    transform: scale(1);
+}
