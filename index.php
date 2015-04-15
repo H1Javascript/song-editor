@@ -21,7 +21,7 @@
             <div id="audio"></div>
         </section>
 
-        <script src="../game/app_dev/vendors/jquery.js"></script>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
         <script>
             var arrows = {
                 38: {
