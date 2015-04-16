@@ -43,19 +43,11 @@
             };
             var partition = [];
             var trackID = (window.location.hash).replace('#/', '');
-            var music = "https://api.soundcloud.com/tracks/"+ trackID +"/stream?client_id=YOUR_CLIENT_ID";
-            var musicElement = $('<audio src="'+ music +'">');
+            var musicElement = $('<audio src="'+ trackID +'">');
             var startTime = 0;
 
             $('#audio').html(musicElement);
             musicElement = $('#audio audio').get(0);
-
-
-            // On recupere les infos de la musique
-            $.get('http://api.soundcloud.com/tracks/'+ trackID +'.json?client_id=YOUR_CLIENT_ID', function (data) {
-                $('h3').html(data.title);
-                $('h4 b').html(data.user.username);
-            });
 
 
             // Quand la musique est fini
